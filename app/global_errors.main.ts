@@ -63,8 +63,34 @@ instrEvent('instr-ready', 'armed');
 let quitText = 'Quit';
 let copyErrorAndQuitText = 'Copy error and quit';
 
+// Consecutive identical fatal errors (e.g. a storm of EIO write failures from
+// an orphaned stdio) must present as a single modal, not an uncloseable
+// conveyor of duplicate dialogs. Within the window, duplicates are counted
+// and dropped; the first occurrence still shows the dialog and exits.
+const DEDUPE_WINDOW_MS = 30_000;
+let lastErrorKey: string | undefined;
+let lastErrorAt = 0;
+let dedupedCount = 0;
+
+function isDuplicateFatal(prefix: string, error: Error): boolean {
+  const key = `${prefix}|${error?.message ?? ''}`;
+  const now = Date.now();
+  if (key === lastErrorKey && now - lastErrorAt < DEDUPE_WINDOW_MS) {
+    lastErrorAt = now;
+    dedupedCount += 1;
+    return true;
+  }
+  lastErrorKey = key;
+  lastErrorAt = now;
+  return false;
+}
+
 function handleError(prefix: string, error: Error): void {
   instrEvent('handleError', `${prefix}: ${error?.message}`);
+  if (isDuplicateFatal(prefix, error)) {
+    instrEvent('deduped', `total=${dedupedCount}`);
+    return;
+  }
   const formattedError = Errors.toLogFormat(error);
   // oxlint-disable-next-line no-console
   console.error(`${prefix}:`, formattedError);
