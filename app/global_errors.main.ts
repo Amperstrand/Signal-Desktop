@@ -113,6 +113,15 @@ function _getError(reason: unknown): Error {
 }
 
 export const addHandler = (): void => {
+  // Electron's main-process stdout/stderr are socket-backed. If the peer goes
+  // away (orphaned PTY after terminal close, closed pipe), writes fail with
+  // EIO/EPIPE as async stream errors, which surface as uncaughtException via
+  // the 'error' event. These are diagnostics-only streams - losing them says
+  // nothing about application state - so swallow the write failures instead
+  // of treating them as fatal.
+  process.stdout?.on?.('error', () => {});
+  process.stderr?.on?.('error', () => {});
+
   process.on('exit', code => {
     instrEvent('exit', `code=${code}`);
   });
