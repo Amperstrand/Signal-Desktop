@@ -3,6 +3,7 @@
 
 import { app, dialog, clipboard } from 'electron';
 import os from 'node:os';
+import { appendFileSync, existsSync } from 'node:fs';
 
 import * as Errors from '../ts/types/errors.std.ts';
 import { redactAll } from '../ts/util/privacy.node.ts';
@@ -13,17 +14,64 @@ import type { LocaleType } from './locale.node.ts';
 
 const log = createLogger('global_errors');
 
+// --- EIO harness instrumentation (test-only, fully inert unless env is set) ---
+const INSTR_ENABLED = process.env.SIGNAL_EIO_INSTR === '1';
+const INSTR_FILE =
+  process.env.SIGNAL_EIO_EVENTS ?? '/tmp/opencode/signal-eio/events.jsonl';
+
+function instrEvent(kind: string, detail: unknown): void {
+  if (!INSTR_ENABLED) {
+    return;
+  }
+  try {
+    appendFileSync(
+      INSTR_FILE,
+      `${JSON.stringify({
+        t: new Date().toISOString(),
+        pid: process.pid,
+        kind,
+        detail: String(detail).slice(0, 200),
+      })}\n`
+    );
+  } catch {
+    // Instrumentation must never throw.
+  }
+}
+
+if (INSTR_ENABLED && process.env.SIGNAL_EIO_TRIGGER) {
+  const triggerPath = process.env.SIGNAL_EIO_TRIGGER;
+  let armed = true;
+  const timer = setInterval(() => {
+    if (armed && existsSync(triggerPath)) {
+      armed = false;
+      instrEvent('trigger-fired', triggerPath);
+      // Both write paths: console (immediate stdio write) and pino (console
+      // mirror in dev + on-disk destination). Deterministic "log-worthy
+      // event" fired by the harness after killing the PTY.
+      // oxlint-disable-next-line no-console
+      console.warn('eio-test-trigger');
+      log.warn('eio-test-trigger');
+    }
+  }, 250);
+  // oxlint-disable-next-line @typescript-eslint/no-unsafe-call
+  timer.unref?.();
+}
+instrEvent('instr-ready', 'armed');
+// --- end EIO harness instrumentation ---
+
 // We use hard-coded strings until we're able to update these strings from the locale.
 let quitText = 'Quit';
 let copyErrorAndQuitText = 'Copy error and quit';
 
 function handleError(prefix: string, error: Error): void {
+  instrEvent('handleError', `${prefix}: ${error?.message}`);
   const formattedError = Errors.toLogFormat(error);
   // oxlint-disable-next-line no-console
   console.error(`${prefix}:`, formattedError);
   log.error(`${prefix}:`, formattedError);
 
   if (app.isReady()) {
+    instrEvent('dialog', prefix);
     // title field is not shown on macOS, so we don't use it
     const buttonIndex = dialog.showMessageBoxSync({
       buttons: [quitText, copyErrorAndQuitText],
@@ -65,6 +113,9 @@ function _getError(reason: unknown): Error {
 }
 
 export const addHandler = (): void => {
+  process.on('exit', code => {
+    instrEvent('exit', `code=${code}`);
+  });
   app.on('render-process-gone', (_event, _webContents, details) => {
     const { reason, exitCode } = details;
 
