@@ -40,14 +40,27 @@ function isDuplicateFatal(prefix: string, error: Error): boolean {
 let quitText = 'Quit';
 let copyErrorAndQuitText = 'Copy error and quit';
 
+// The error reporter must not manufacture new errors by writing to the same
+// stream whose failure it is reporting. EIO/EPIPE from stdio would otherwise
+// re-enter this handler and stack additional dialogs.
+// See https://github.com/signalapp/Signal-Desktop/issues/7644
+function safeReport(prefix: string, formattedError: string): void {
+  try {
+    // oxlint-disable-next-line no-console
+    console.error(`${prefix}:`, formattedError);
+    log.error(`${prefix}:`, formattedError);
+  } catch {
+    // Sync write failure (TTY-backed stdio): swallow - the on-disk rotating
+    // log already captured the error via pino's file destination.
+  }
+}
+
 function handleError(prefix: string, error: Error): void {
   if (isDuplicateFatal(prefix, error)) {
     return;
   }
   const formattedError = Errors.toLogFormat(error);
-  // oxlint-disable-next-line no-console
-  console.error(`${prefix}:`, formattedError);
-  log.error(`${prefix}:`, formattedError);
+  safeReport(prefix, formattedError);
 
   if (app.isReady()) {
     // title field is not shown on macOS, so we don't use it
