@@ -1,0 +1,6 @@
+{"t":"2026-11-11T21:46:35.626Z","pid":959880,"kind":"instr-ready","detail":"armed"}
+{"t":"2026-11-11T21:46:42.292Z","pid":959880,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:46:42.301Z","pid":959880,"kind":"dialog","detail":"Unhandled Error"}
+{"t":"2026-11-11T21:46:44.954Z","pid":959880,"kind":"exit","detail":"code=1"}
+{"t":"2026-11-11T21:46:44.964Z","pid":959880,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:46:44.968Z","pid":959880,"kind":"dialog","detail":"Unhandled Error"}

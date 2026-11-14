@@ -1,0 +1,52 @@
+{
+  "label": "harness-r2",
+  "ready_after_s": 2.5,
+  "saw_stdout_output": true,
+  "alive_after_settle": true,
+  "alive_at_end": true,
+  "exited_seconds_after_trigger": null,
+  "trigger_fired": false,
+  "event_counts": {
+    "instr-ready": 1,
+    "handleError": 2,
+    "dialog": 1,
+    "exit": 1
+  },
+  "env_probe": [
+    {
+      "pid": "192435",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "192504",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "955245",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "955270",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": [
+        "SIGNAL_EIO_TRIGGER=/tmp/opencode/signal-eio/runs/harness-r2-1794433275/trigger",
+        "SIGNAL_EIO_INSTR=1",
+        "SIGNAL_EIO_EVENTS=/tmp/opencode/signal-eio/runs/harness-r2-1794433275/events.jsonl"
+      ]
+    },
+    {
+      "pid": "3541852",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --no-zygote-sandbox --crashpad-handler-pi",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3541853",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --crashpad-handler-pid=3541841 --enable-c",
+      "signal_eio_vars": []
+    }
+  ],
+  "run_dir": "harness-r2-1794433275"
+}

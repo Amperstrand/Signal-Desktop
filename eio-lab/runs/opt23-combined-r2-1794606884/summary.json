@@ -1,0 +1,45 @@
+{
+  "label": "opt23-combined-r2",
+  "ready_after_s": 1.7,
+  "saw_stdout_output": true,
+  "alive_after_settle": true,
+  "alive_at_end": true,
+  "exited_seconds_after_trigger": null,
+  "trigger_fired": false,
+  "event_counts": {
+    "instr-ready": 1
+  },
+  "env_probe": [
+    {
+      "pid": "192435",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "192504",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3541852",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --no-zygote-sandbox --crashpad-handler-pi",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3541853",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --crashpad-handler-pid=3541841 --enable-c",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3541900",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --crashpad-handler-pid=3541841 --enable-c",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3542064",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=utility --utility-sub-type=storage.mojom.Storage",
+      "signal_eio_vars": []
+    }
+  ],
+  "run_dir": "opt23-combined-r2-1794606884"
+}

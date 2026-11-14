@@ -1,0 +1,10 @@
+{
+  "label": "opt1-stdio-guard-r1",
+  "saw_stdout_output": true,
+  "alive_after_settle": true,
+  "alive_at_end": true,
+  "exited_seconds_after_trigger": null,
+  "trigger_fired": false,
+  "event_counts": {},
+  "run_dir": "opt1-stdio-guard-r1-1794432726"
+}

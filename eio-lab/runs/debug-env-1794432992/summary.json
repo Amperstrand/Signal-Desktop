@@ -1,0 +1,49 @@
+{
+  "label": "debug-env",
+  "saw_stdout_output": true,
+  "alive_after_settle": true,
+  "alive_at_end": true,
+  "exited_seconds_after_trigger": null,
+  "trigger_fired": true,
+  "event_counts": {
+    "trigger-fired": 1,
+    "exit": 1
+  },
+  "env_probe": [
+    {
+      "pid": "192435",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "192504",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "950824",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "950949",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": [
+        "SIGNAL_EIO_TRIGGER=/tmp/opencode/signal-eio/runs/debug-env-1794432992/trigger",
+        "SIGNAL_EIO_INSTR=1",
+        "SIGNAL_EIO_EVENTS=/tmp/opencode/signal-eio/runs/debug-env-1794432992/events.jsonl"
+      ]
+    },
+    {
+      "pid": "3541852",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --no-zygote-sandbox --crashpad-handler-pi",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "3541853",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=zygote --crashpad-handler-pid=3541841 --enable-c",
+      "signal_eio_vars": []
+    }
+  ],
+  "run_dir": "debug-env-1794432992"
+}

@@ -1,0 +1,222 @@
+[config] Using config source default.json
+[config] Using config source development.json
+NODE_ENV development
+NODE_CONFIG_ENV development
+NODE_CONFIG_DIR /home/user/src/Signal-Desktop/config
+NODE_CONFIG {}
+ALLOW_CONFIG_MUTATIONS undefined
+HOSTNAME LOCALHOST
+NODE_APP_INSTANCE undefined
+SUPPRESS_NO_CONFIG_WARNING undefined
+SIGNAL_ENABLE_HTTP undefined
+[startup_config] Set Windows Application User Model ID (AUMID) { AUMID: [32m'org.whispersystems.signal-desktop'[39m }
+userData: /home/user/.config/Signal-development
+[base_config] config/get: Successfully read user config file
+[base_config] config/get: Successfully read ephemeral config file
+[app/main] crashReporter: enabled
+[app/main] making app single instance
+[app/main] got fast localeOverride setting [1mnull[22m
+[app/main] app.ready: hour cycle preference: UnknownPreference
+[app/main] app.ready: preferred system locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant
+[app/main] locale: Preferred locales: en-US, en
+[app/main] locale: Locale Override: [1mnull[22m
+[app/main] locale: Matched locale: en
+[setupI18nMain] intl.onWarn [@formatjs/intl] "defaultRichTextElements" was specified but "message" was not pre-compiled. 
+Please consider using "@formatjs/cli" to pre-compile your messages for performance.
+For more details see https://formatjs.github.io/docs/getting-started/message-distribution
+[app/main] locale: Text info direction for en: ltr
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+(electron) 'safeStorage.isEncryptionAvailable' is deprecated and will be removed. Please use 'safeStorage.isAsyncEncryptionAvailable' instead.
+[app/main] getSQLKey: using legacy key
+[SystemTraySettingCache] getSystemTraySetting got value MinimizeToSystemTray
+[SystemTraySettingCache] getSystemTraySetting returning MinimizeToSystemTray
+[app/main] app ready
+[app/main] starting version 8.37.0-alpha.1
+[app/main] media access status [90mundefined[39m [90mundefined[39m [90mundefined[39m
+[app/main] got fast theme-setting value system
+[app/main] got fast spellcheck setting [33mtrue[39m
+[app/main] got fast theme-setting value system
+[app/main] got fast spellcheck setting [33mtrue[39m
+[app/main] visibleOnAnyScreen(window): x=560, y=235, width=800, height=610
+[app/main] visibleOnAnyScreen(display #33): x=0, y=0, width=1920, height=1080
+[app/main] Initializing BrowserWindow config: {
+  show: [33mfalse[39m,
+  width: [33m800[39m,
+  height: [33m610[39m,
+  minWidth: [33m300[39m,
+  minHeight: [33m200[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  titleBarStyle: [32m'default'[39m,
+  backgroundColor: [32m'#191919'[39m,
+  webPreferences: {
+    devTools: [33mtrue[39m,
+    spellcheck: [33mtrue[39m,
+    nodeIntegration: [33mfalse[39m,
+    nodeIntegrationInWorker: [33mfalse[39m,
+    sandbox: [33mfalse[39m,
+    contextIsolation: [33mtrue[39m,
+    preload: [32m'/home/user/src/Signal-Desktop/bundles/preload/wrapper.js'[39m
+  },
+  icon: [32m'/home/user/src/Signal-Desktop/images/signal-logo-desktop-linux.png'[39m,
+  x: [33m560[39m,
+  y: [33m235[39m
+}
+[spell_check] spellcheck: user locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[spell_check] spellcheck: available spellchecker languages: [
+  [32m'af'[39m,    [32m'bg'[39m,             [32m'ca'[39m,
+  [32m'cs'[39m,    [32m'cy'[39m,             [32m'da'[39m,
+  [32m'de'[39m,    [32m'de-DE'[39m,          [32m'el'[39m,
+  [32m'en'[39m,    [32m'en-AU'[39m,          [32m'en-CA'[39m,
+  [32m'en-GB'[39m, [32m'en-GB-oxendict'[39m, [32m'en-US'[39m,
+  [32m'es'[39m,    [32m'es-419'[39m,         [32m'es-AR'[39m,
+  [32m'es-ES'[39m, [32m'es-MX'[39m,          [32m'es-US'[39m,
+  [32m'et'[39m,    [32m'fa'[39m,             [32m'fo'[39m,
+  [32m'fr'[39m,    [32m'fr-FR'[39m,          [32m'gl'[39m,
+  [32m'he'[39m,    [32m'hi'[39m,             [32m'hr'[39m,
+  [32m'hu'[39m,    [32m'hy'[39m,             [32m'id'[39m,
+  [32m'it'[39m,    [32m'it-IT'[39m,          [32m'ko'[39m,
+  [32m'lt'[39m,    [32m'lv'[39m,             [32m'nb'[39m,
+  [32m'nl'[39m,    [32m'pl'[39m,             [32m'pt'[39m,
+  [32m'pt-BR'[39m, [32m'pt-PT'[39m,          [32m'ro'[39m,
+  [32m'ru'[39m,    [32m'sh'[39m,             [32m'sk'[39m,
+  [32m'sl'[39m,    [32m'sq'[39m,             [32m'sr'[39m,
+  [32m'sv'[39m,    [32m'ta'[39m,             [32m'tg'[39m,
+  [32m'tr'[39m,    [32m'uk'[39m,             [32m'vi'[39m
+]
+[spell_check] spellcheck: setting languages to: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] MainSQL: sqlite(SQLITE_NOTICE_RECOVER_WAL): recovered 129 frames from WAL file /home/user/.config/Signal-development/sql/db.sqlite-wal
+[app/main] MainSQL: updateSchema:
+  Current user_version: 920;
+  Most recent db schema: 1870;
+  SQLite version: 3.53.4;
+  SQLCipher version: 4.18.0 community;
+  (deprecated) schema_version: 436;
+
+[app/main] MainSQL: [updateSchema(930)] success
+[app/main] MainSQL: [updateSchema(940)] success
+[app/main] MainSQL: [updateSchema(950)] success
+[app/main] MainSQL: [updateSchema(960)] Our ACI not found
+[app/main] MainSQL: [updateSchema(960)] not running, pni is normalized
+[app/main] MainSQL: [updateSchema(960)] success
+[app/main] MainSQL: [updateSchema(970)] success
+[app/main] MainSQL: [updateSchema(980)] success
+[app/main] MainSQL: [updateSchema(990)] success
+[app/main] MainSQL: [updateSchema(1000)] success
+[app/main] MainSQL: [updateSchema(1010)] success
+[app/main] MainSQL: [updateSchema(1020)] not linked
+[app/main] MainSQL: [updateSchema(1020)] success
+[app/main] MainSQL: [updateSchema(1030)] success
+[app/main] MainSQL: [updateSchema(1040)] loaded 0 existing jobs
+[app/main] MainSQL: [updateSchema(1040)] transferred 0 rows, removed 0
+[app/main] MainSQL: [updateSchema(1040)] success
+[app/main] MainSQL: [updateSchema(1050)] success
+[app/main] MainSQL: [updateSchema(1060)] success
+[app/main] MainSQL: [updateSchema(1070)] success
+[app/main] MainSQL: [updateSchema(1080)] success
+[app/main] MainSQL: [updateSchema(1090)] success
+[app/main] MainSQL: [updateSchema(1100)] success
+[app/main] MainSQL: [updateSchema(1110)] success
+[app/main] MainSQL: [updateSchema(1120)] success
+[app/main] MainSQL: [updateSchema(1130)] success
+[app/main] MainSQL: [updateSchema(1140)] success
+[app/main] MainSQL: [updateSchema(1150)] success
+[app/main] MainSQL: [updateSchema(1160)] success
+[app/main] MainSQL: [updateSchema(1170)] success
+[app/main] MainSQL: [updateSchema(1180)] success
+[app/main] MainSQL: [updateSchema(1190)] success
+[app/main] MainSQL: [updateSchema(1200)] success
+[app/main] MainSQL: [updateSchema(1210)] success
+[app/main] MainSQL: [updateSchema(1220)] no identity/registration id
+[app/main] MainSQL: [updateSchema(1220)] success
+[app/main] MainSQL: [updateSchema(1230)] success
+[app/main] MainSQL: [updateSchema(1240)] success
+[app/main] MainSQL: [updateSchema(1250)] success
+[app/main] MainSQL: [updateSchema(1260)] success
+[app/main] Updating BrowserWindow config: {
+  maximized: [33mfalse[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  fullscreen: [33mfalse[39m,
+  width: [33m800[39m,
+  height: [33m610[39m,
+  x: [33m560[39m,
+  y: [33m235[39m
+}
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] MainSQL: [updateSchema(1270)] success
+[app/main] MainSQL: [updateSchema(1280)] success
+[app/main] MainSQL: [updateSchema(1290)] success
+[app/main] MainSQL: [updateSchema(1300)] success
+[app/main] MainSQL: [updateSchema(1310)] success
+[app/main] MainSQL: [updateSchema(1320)] success
+[app/main] MainSQL: [updateSchema(1330)] success
+[app/main] MainSQL: [updateSchema(1340)] success
+[app/main] MainSQL: [updateSchema(1350)] success
+[app/main] MainSQL: [updateSchema(1360)] success
+[app/main] MainSQL: [updateSchema(1370)] success
+[app/main] MainSQL: [updateSchema(1380)] success
+[app/main] sql.initialize is taking more than three seconds; showing loading dialog
+[app/main] MainSQL: [updateSchema(1390)] success
+[app/main] MainSQL: [updateSchema(1400)] success
+[app/main] MainSQL: [updateSchema(1410)] success
+[app/main] MainSQL: [updateSchema(1420)] success
+[app/main] MainSQL: [updateSchema(1430)] success
+[app/main] MainSQL: [updateSchema(1440)] success
+[app/main] MainSQL: [updateSchema(1450)] success
+[app/main] MainSQL: [updateSchema(1460)] success
+[app/main] MainSQL: [updateSchema(1470)] success
+[app/main] MainSQL: [updateSchema(1480)] Removed 0 duplicate all chats chat folders
+[app/main] MainSQL: [updateSchema(1480)] success
+[app/main] MainSQL: [updateSchema(1490)] Removed 0 notification profiles with non-lowercase ids
+[app/main] MainSQL: [updateSchema(1490)] success
+[app/main] MainSQL: [updateSchema(1500)] success
+[app/main] MainSQL: [updateSchema(1510)] Updated 0 all chats chat folders
+[app/main] MainSQL: [updateSchema(1510)] success
+[app/main] MainSQL: [updateSchema(1520)] success
+[app/main] MainSQL: [updateSchema(1530)] success
+[app/main] MainSQL: [updateSchema(1540)] success
+[app/main] MainSQL: [updateSchema(1550)] success
+[app/main] MainSQL: [updateSchema(1560)] success
+[app/main] MainSQL: [updateSchema(1561)] Updated 0 poll messages
+[app/main] MainSQL: [updateSchema(1561)] success
+[app/main] MainSQL: [updateSchema(1570)] success
+[app/main] MainSQL: [updateSchema(1580)] success
+[app/main] MainSQL: [updateSchema(1590)] success
+[app/main] MainSQL: [updateSchema(1600)] success
+[app/main] MainSQL: [updateSchema(1610)] success
+[app/main] MainSQL: [updateSchema(1620)] success
+[app/main] MainSQL: [updateSchema(1630)] success
+[app/main] MainSQL: [updateSchema(1640)] success
+[app/main] MainSQL: [updateSchema(1650)] success
+[app/main] MainSQL: [updateSchema(1660)] success
+[app/main] MainSQL: [updateSchema(1670)] success
+[app/main] MainSQL: [updateSchema(1680)] success
+[app/main] MainSQL: [updateSchema(1690)] Updated 0 poll terminate notifications
+[app/main] MainSQL: [updateSchema(1690)] success
+[app/main] MainSQL: [updateSchema(1700)] success
+[app/main] MainSQL: [updateSchema(1710)] success
+[app/main] MainSQL: [updateSchema(1720)] success
+[app/main] MainSQL: [updateSchema(1730)] success
+[app/main] MainSQL: [updateSchema(1740)] About to iterate through 0 conversations
+[app/main] MainSQL: [updateSchema(1740)] success
+[app/main] MainSQL: [updateSchema(1750)] success
+[app/main] MainSQL: [updateSchema(1760)] updateToSchemaVersion1760: removed storyReplyContext.attachment from 0 message(s)
+[app/main] MainSQL: [updateSchema(1760)] success
+[app/main] MainSQL: [updateSchema(1770)] success
+[app/main] MainSQL: [updateSchema(1780)] success
+[app/main] MainSQL: [updateSchema(1790)] success
+[app/main] MainSQL: [updateSchema(1800)] updateToSchemaVersion1800: Deleted 0 defunct call links
+[app/main] MainSQL: [updateSchema(1800)] updateToSchemaVersion1800: Updated 0 defunct call links
+[app/main] MainSQL: [updateSchema(1800)] success
+[app/main] MainSQL: [updateSchema(1810)] Updated groupId for 0 conversations
+[app/main] MainSQL: [updateSchema(1810)] success
+[app/main] MainSQL: [updateSchema(1820)] success
+[app/main] MainSQL: [updateSchema(1830)] success
+[app/main] MainSQL: [updateSchema(1840)] success
+[app/main] MainSQL: [updateSchema(1850)] success
+[app/main] MainSQL: [updateSchema(1860)] success
+[app/main] MainSQL: [updateSchema(1870)] success
+[app/main] MainSQL: enableFTS5SecureDelete: enabling
+[app/main] MainSQL: updateSchema: optimize took 38ms

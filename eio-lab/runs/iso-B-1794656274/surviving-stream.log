@@ -1,0 +1,14 @@
+[config] Using config source default.json
+[config] Using config source development.json
+NODE_ENV development
+NODE_CONFIG_ENV development
+NODE_CONFIG_DIR /home/user/src/Signal-Desktop/config
+NODE_CONFIG {}
+ALLOW_CONFIG_MUTATIONS undefined
+HOSTNAME LOCALHOST
+NODE_APP_INSTANCE undefined
+SUPPRESS_NO_CONFIG_WARNING undefined
+SIGNAL_ENABLE_HTTP undefined
+[startup_config] Set Windows Application User Model ID (AUMID) { AUMID: 'org.whispersystems.signal-desktop' }
+userData: /home/user/.config/Signal-development
+[base_config] config/get: Successfully read user config file

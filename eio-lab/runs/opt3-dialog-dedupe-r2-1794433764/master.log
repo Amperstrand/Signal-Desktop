@@ -1,0 +1,30 @@
+[config] Using config source default.json
+[config] Using config source development.json
+NODE_ENV development
+NODE_CONFIG_ENV development
+NODE_CONFIG_DIR /home/user/src/Signal-Desktop/config
+NODE_CONFIG {}
+ALLOW_CONFIG_MUTATIONS undefined
+HOSTNAME LOCALHOST
+NODE_APP_INSTANCE undefined
+SUPPRESS_NO_CONFIG_WARNING undefined
+SIGNAL_ENABLE_HTTP undefined
+[startup_config] Set Windows Application User Model ID (AUMID) { AUMID: [32m'org.whispersystems.signal-desktop'[39m }
+userData: /home/user/.config/Signal-development
+[base_config] config/get: Successfully read user config file
+[base_config] config/get: Successfully read ephemeral config file
+[app/main] crashReporter: enabled
+[app/main] making app single instance
+[app/main] got fast localeOverride setting [1mnull[22m
+[app/main] app.ready: hour cycle preference: UnknownPreference
+[app/main] app.ready: preferred system locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant
+[app/main] locale: Preferred locales: en-US, en
+[app/main] locale: Locale Override: [1mnull[22m
+[app/main] locale: Matched locale: en
+[setupI18nMain] intl.onWarn [@formatjs/intl] "defaultRichTextElements" was specified but "message" was not pre-compiled. 
+Please consider using "@formatjs/cli" to pre-compile your messages for performance.
+For more details see https://formatjs.github.io/docs/getting-started/message-distribution
+[app/main] locale: Text info direction for en: ltr
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+[app/main] signal is already registered as the default app for the sgnl url scheme.

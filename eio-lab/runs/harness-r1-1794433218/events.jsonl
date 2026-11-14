@@ -1,0 +1,10 @@
+{"t":"2026-11-11T21:40:21.902Z","pid":954393,"kind":"instr-ready","detail":"armed"}
+{"t":"2026-11-11T21:40:27.258Z","pid":954393,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:40:27.266Z","pid":954393,"kind":"dialog","detail":"Unhandled Error"}
+{"t":"2026-11-11T21:40:32.289Z","pid":954393,"kind":"exit","detail":"code=1"}
+{"t":"2026-11-11T21:40:32.292Z","pid":954393,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:40:32.293Z","pid":954393,"kind":"dialog","detail":"Unhandled Error"}
+{"t":"2026-11-11T21:41:01.962Z","pid":954393,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:41:01.963Z","pid":954393,"kind":"dialog","detail":"Unhandled Error"}
+{"t":"2026-11-11T21:41:06.196Z","pid":954393,"kind":"handleError","detail":"Unhandled Error: write EIO"}
+{"t":"2026-11-11T21:41:06.198Z","pid":954393,"kind":"dialog","detail":"Unhandled Error"}

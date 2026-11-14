@@ -1,0 +1,2 @@
+{"t":"2026-11-13T22:03:11.923Z","pid":3431280,"kind":"instr-ready","detail":"armed"}
+{"t":"2026-11-13T22:03:22.321Z","pid":3431280,"kind":"trigger-fired","detail":"/tmp/opencode/signal-eio/runs/preclose-probe/trigger"}

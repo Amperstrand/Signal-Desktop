@@ -1,0 +1,240 @@
+[config] Using config source default.json
+[config] Using config source development.json
+NODE_ENV development
+NODE_CONFIG_ENV development
+NODE_CONFIG_DIR /home/user/src/Signal-Desktop/config
+NODE_CONFIG {}
+ALLOW_CONFIG_MUTATIONS undefined
+HOSTNAME LOCALHOST
+NODE_APP_INSTANCE undefined
+SUPPRESS_NO_CONFIG_WARNING undefined
+SIGNAL_ENABLE_HTTP undefined
+[startup_config] Set Windows Application User Model ID (AUMID) { AUMID: [32m'org.whispersystems.signal-desktop'[39m }
+userData: /home/user/.config/Signal-development
+[base_config] config/start: Did not find user config file (or it was empty), cache is now empty object
+[base_config] config/start: Did not find ephemeral config file (or it was empty), cache is now empty object
+[app/main] crashReporter: enabled
+[app/main] making app single instance
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] initializing localeOverride setting [1mnull[22m
+[app/main] app.ready: hour cycle preference: UnknownPreference
+[app/main] app.ready: preferred system locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant
+[app/main] locale: Preferred locales: en-US, en
+[app/main] locale: Locale Override: [1mnull[22m
+[app/main] locale: Matched locale: en
+[setupI18nMain] intl.onWarn [@formatjs/intl] "defaultRichTextElements" was specified but "message" was not pre-compiled. 
+Please consider using "@formatjs/cli" to pre-compile your messages for performance.
+For more details see https://formatjs.github.io/docs/getting-started/message-distribution
+[app/main] locale: Text info direction for en: ltr
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+(electron) 'safeStorage.isEncryptionAvailable' is deprecated and will be removed. Please use 'safeStorage.isAsyncEncryptionAvailable' instead.
+[app/main] getSQLKey: got key from config, but it wasn't a string
+[app/main] key/initialize: Generating new encryption key, since we did not find it on disk
+[app/main] getSQLKey: updating plaintext key in the config
+[base_config] config/set: Saving user config to disk
+[base_config] config/set: Saved user config to disk
+[SystemTraySettingCache] getSystemTraySetting got no value, returning Uninitialized
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] app.ready: setting system-tray-setting to MinimizeToSystemTray
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] app ready
+[app/main] starting version 8.37.0-alpha.1
+[app/main] media access status [90mundefined[39m [90mundefined[39m [90mundefined[39m
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] initializing spellcheck setting [33mtrue[39m
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] saving theme-setting value system
+[app/main] got fast spellcheck setting [33mtrue[39m
+[app/main] Initializing BrowserWindow config: {
+  show: [33mfalse[39m,
+  width: [33m800[39m,
+  height: [33m610[39m,
+  minWidth: [33m300[39m,
+  minHeight: [33m200[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  titleBarStyle: [32m'default'[39m,
+  backgroundColor: [32m'#191919'[39m,
+  webPreferences: {
+    devTools: [33mtrue[39m,
+    spellcheck: [33mtrue[39m,
+    nodeIntegration: [33mfalse[39m,
+    nodeIntegrationInWorker: [33mfalse[39m,
+    sandbox: [33mfalse[39m,
+    contextIsolation: [33mtrue[39m,
+    preload: [32m'/home/user/src/Signal-Desktop/bundles/preload/wrapper.js'[39m
+  },
+  icon: [32m'/home/user/src/Signal-Desktop/images/signal-logo-desktop-linux.png'[39m
+}
+[spell_check] spellcheck: user locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[spell_check] spellcheck: available spellchecker languages: [
+  [32m'af'[39m,    [32m'bg'[39m,             [32m'ca'[39m,
+  [32m'cs'[39m,    [32m'cy'[39m,             [32m'da'[39m,
+  [32m'de'[39m,    [32m'de-DE'[39m,          [32m'el'[39m,
+  [32m'en'[39m,    [32m'en-AU'[39m,          [32m'en-CA'[39m,
+  [32m'en-GB'[39m, [32m'en-GB-oxendict'[39m, [32m'en-US'[39m,
+  [32m'es'[39m,    [32m'es-419'[39m,         [32m'es-AR'[39m,
+  [32m'es-ES'[39m, [32m'es-MX'[39m,          [32m'es-US'[39m,
+  [32m'et'[39m,    [32m'fa'[39m,             [32m'fo'[39m,
+  [32m'fr'[39m,    [32m'fr-FR'[39m,          [32m'gl'[39m,
+  [32m'he'[39m,    [32m'hi'[39m,             [32m'hr'[39m,
+  [32m'hu'[39m,    [32m'hy'[39m,             [32m'id'[39m,
+  [32m'it'[39m,    [32m'it-IT'[39m,          [32m'ko'[39m,
+  [32m'lt'[39m,    [32m'lv'[39m,             [32m'nb'[39m,
+  [32m'nl'[39m,    [32m'pl'[39m,             [32m'pt'[39m,
+  [32m'pt-BR'[39m, [32m'pt-PT'[39m,          [32m'ro'[39m,
+  [32m'ru'[39m,    [32m'sh'[39m,             [32m'sk'[39m,
+  [32m'sl'[39m,    [32m'sq'[39m,             [32m'sr'[39m,
+  [32m'sv'[39m,    [32m'ta'[39m,             [32m'tg'[39m,
+  [32m'tr'[39m,    [32m'uk'[39m,             [32m'vi'[39m
+]
+[spell_check] spellcheck: setting languages to: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] MainSQL: migrateSchemaVersion: Migrating from schema_version 0 to user_version 0
+[app/main] MainSQL: updateSchema:
+  Current user_version: 0;
+  Most recent db schema: 1870;
+  SQLite version: 3.53.4;
+  SQLCipher version: 4.18.0 community;
+  (deprecated) schema_version: 0;
+
+[app/main] MainSQL: [updateSchema(1)] success
+[app/main] MainSQL: [updateSchema(2)] success
+[app/main] MainSQL: [updateSchema(3)] success
+[app/main] MainSQL: [updateSchema(4)] success
+[app/main] MainSQL: [updateSchema(6)] success
+[app/main] MainSQL: [updateSchema(7)] success
+[app/main] MainSQL: [updateSchema(8)] success
+[app/main] MainSQL: [updateSchema(9)] success
+[app/main] MainSQL: [updateSchema(10)] success
+[app/main] MainSQL: [updateSchema(11)] success
+[app/main] MainSQL: [updateSchema(12)] success
+[app/main] MainSQL: [updateSchema(13)] success
+[app/main] MainSQL: [updateSchema(14)] success
+[app/main] MainSQL: [updateSchema(15)] success
+[app/main] sql.initialize is taking more than three seconds; showing loading dialog
+[app/main] spellcheck: dictionary download begin: en
+[app/main] spellcheck: dictionary download begin: en-US
+[app/main] MainSQL: [updateSchema(16)] success
+[app/main] MainSQL: [updateSchema(17)] success
+[app/main] MainSQL: [updateSchema(18)] success
+[app/main] MainSQL: [updateSchema(19)] success
+[app/main] MainSQL: [updateSchema(20)] success
+[app/main] MainSQL: [updateSchema(21)] success
+[app/main] MainSQL: [updateSchema(22)] success
+[app/main] MainSQL: [updateSchema(23)] success
+[app/main] MainSQL: [updateSchema(24)] success
+[app/main] MainSQL: [updateSchema(25)] success
+[app/main] MainSQL: [updateSchema(26)] success
+[app/main] MainSQL: [updateSchema(27)] success
+[app/main] MainSQL: [updateSchema(28)] success
+[app/main] MainSQL: [updateSchema(29)] success
+[app/main] MainSQL: [updateSchema(30)] success
+[app/main] MainSQL: [updateSchema(31)] success
+[app/main] MainSQL: [updateSchema(32)] success
+[app/main] MainSQL: [updateSchema(33)] success
+[app/main] MainSQL: [updateSchema(34)] success
+[app/main] MainSQL: [updateSchema(35)] success
+[app/main] MainSQL: [updateSchema(36)] success
+[app/main] MainSQL: [updateSchema(37)] success
+[app/main] MainSQL: [updateSchema(38)] success
+[app/main] spellcheck: dictionary download success: en
+[app/main] spellcheck: dictionary initialized: en
+[app/main] MainSQL: [updateSchema(39)] success
+[app/main] MainSQL: [updateSchema(40)] success
+[app/main] spellcheck: dictionary download success: en-US
+[app/main] spellcheck: dictionary initialized: en-US
+[app/main] MainSQL: [updateSchema(41)] success
+[app/main] MainSQL: [updateSchema(42)] success
+[app/main] MainSQL: [updateSchema(43)] About to iterate through 0 conversations
+[app/main] MainSQL: [updateSchema(43)] About to iterate through 0 messages
+[app/main] MainSQL: [updateSchema(43)] Updated 0 messages
+[app/main] MainSQL: [updateSchema(43)] success
+[app/main] MainSQL: [updateSchema(44)] success
+[app/main] MainSQL: [updateSchema(45)] success
+[app/main] MainSQL: [updateSchema(46)] success
+[app/main] Updating BrowserWindow config: {
+  maximized: [33mfalse[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  fullscreen: [33mfalse[39m,
+  width: [33m800[39m,
+  height: [33m610[39m,
+  x: [33m560[39m,
+  y: [33m235[39m
+}
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] MainSQL: [updateSchema(47)] our UUID not found
+[app/main] MainSQL: [updateSchema(47)] success
+[app/main] MainSQL: [updateSchema(48)] success
+[app/main] MainSQL: [updateSchema(49)] success
+[app/main] MainSQL: [updateSchema(50)] success
+[app/main] MainSQL: [updateSchema(51)] success
+[app/main] MainSQL: [updateSchema(52)] success
+[app/main] MainSQL: [updateSchema(53)] About to iterate through 0 conversations
+[app/main] MainSQL: [updateSchema(53)] Updated 0 conversations
+[app/main] MainSQL: [updateSchema(53)] success
+[app/main] MainSQL: [updateSchema(54)] success
+[app/main] MainSQL: [updateSchema(55)] success
+[app/main] MainSQL: [updateSchema(56)] success
+[app/main] MainSQL: [updateSchema(57)] success
+[app/main] MainSQL: [updateSchema(58)] success
+[app/main] MainSQL: [updateSchema(59)] success
+[app/main] MainSQL: [updateSchema(60)] success
+[app/main] MainSQL: [updateSchema(61)] success
+[app/main] MainSQL: [updateSchema(62)] success
+[app/main] MainSQL: [updateSchema(63)] success
+[app/main] MainSQL: [updateSchema(64)] success
+[app/main] MainSQL: [updateSchema(65)] success
+[app/main] MainSQL: [updateSchema(66)] success
+[app/main] MainSQL: [updateSchema(67)] success
+[941957:1111/222922.208672:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 1 times!
+[app/main] MainSQL: [updateSchema(68)] success
+[app/main] MainSQL: [updateSchema(69)] success
+[app/main] MainSQL: [updateSchema(70)] success
+[app/main] MainSQL: [updateSchema(71)] success
+[app/main] MainSQL: [updateSchema(72)] success
+[app/main] MainSQL: [updateSchema(73)] success
+[app/main] MainSQL: [updateSchema(74)] success
+[app/main] MainSQL: [updateSchema(75)] success
+[app/main] MainSQL: [updateSchema(76)] success
+[app/main] MainSQL: [updateSchema(77)] success
+[app/main] MainSQL: [updateSchema(78)] success
+[app/main] MainSQL: [updateSchema(79)] success
+[app/main] MainSQL: [updateSchema(80)] success
+[app/main] MainSQL: [updateSchema(81)] success
+[app/main] MainSQL: [updateSchema(82)] success
+[app/main] MainSQL: [updateSchema(83)] success
+[app/main] MainSQL: [updateSchema(84)] success
+[app/main] MainSQL: [updateSchema(85)] success
+[app/main] MainSQL: [updateSchema(86)] success
+[app/main] MainSQL: [updateSchema(87)] (cleanup)/kyberPreKeys: Our PNI not found
+[app/main] MainSQL: [updateSchema(87)] (cleanup)/preKeys: Our PNI not found
+[app/main] MainSQL: [updateSchema(87)] (cleanup)/signedPreKeys: Our PNI not found
+[app/main] MainSQL: [updateSchema(87)] success
+[app/main] MainSQL: [updateSchema(88)] updating 0 conversations
+[app/main] MainSQL: [updateSchema(88)] Our UUID not found
+[app/main] MainSQL: [updateSchema(88)] Our PNI not found
+[app/main] MainSQL: [updateSchema(88)] updating 0 sessions
+[app/main] MainSQL: [updateSchema(88)] updating messages
+[app/main] MainSQL: [updateSchema(88)] updated 0 messages
+[app/main] MainSQL: [updateSchema(88)] updating 0 preKeys
+[app/main] MainSQL: [updateSchema(88)] updating 0 signedPreKeys
+[app/main] MainSQL: [updateSchema(88)] updating 0 kyberPreKeys
+[app/main] MainSQL: [updateSchema(88)] updated 0 jobs
+[app/main] MainSQL: [updateSchema(88)] success
+[app/main] MainSQL: [updateSchema(89)] success
+[app/main] MainSQL: [updateSchema(90)] removed screenshotData from 0 message
+[app/main] MainSQL: [updateSchema(90)] success
+[app/main] MainSQL: [updateSchema(91)] Found 0 keys
+[app/main] MainSQL: [updateSchema(91)] success
+[app/main] MainSQL: [updateSchema(920)] kyberPreKeys: Our PNI not found
+[app/main] MainSQL: [updateSchema(920)] signedPreKeys: Our PNI not found
+[app/main] MainSQL: [updateSchema(920)] Done with deletions, starting vacuum...
+[app/main] MainSQL: [updateSchema(920)] success, needs vacuum
+[app/main] MainSQL: running vacuum

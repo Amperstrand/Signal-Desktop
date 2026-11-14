@@ -1,0 +1,127 @@
+[config] Using config source default.json
+[config] Using config source development.json
+NODE_ENV development
+NODE_CONFIG_ENV development
+NODE_CONFIG_DIR /home/user/src/Signal-Desktop/config
+NODE_CONFIG {}
+ALLOW_CONFIG_MUTATIONS undefined
+HOSTNAME LOCALHOST
+NODE_APP_INSTANCE undefined
+SUPPRESS_NO_CONFIG_WARNING undefined
+SIGNAL_ENABLE_HTTP undefined
+[startup_config] Set Windows Application User Model ID (AUMID) { AUMID: [32m'org.whispersystems.signal-desktop'[39m }
+userData: /home/user/.config/Signal-development
+[base_config] config/get: Successfully read user config file
+[base_config] config/get: Successfully read ephemeral config file
+[app/main] crashReporter: enabled
+[app/main] making app single instance
+[app/main] got fast localeOverride setting [1mnull[22m
+[app/main] app.ready: hour cycle preference: UnknownPreference
+[app/main] app.ready: preferred system locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] locale: Supported locales: af-ZA, ar, az-AZ, bg-BG, bn-BD, bs-BA, ca, cs, da, de, el, en, es, et-EE, eu, fa-IR, fi, fr, ga-IE, gl-ES, gu-IN, he, hi-IN, hr-HR, hu, id, it, ja, ka-GE, kk-KZ, km-KH, kn-IN, ko, ky-KG, lt-LT, lv-LV, mk-MK, ml-IN, mr-IN, ms, my, nb, nl, pa-IN, pl, pt-BR, pt-PT, ro-RO, ru, sk-SK, sl-SI, sq-AL, sr, sv, sw, ta-IN, te-IN, th, tl-PH, tr, ug, uk-UA, ur, vi, yue, zh-CN, zh-HK, zh-Hant
+[app/main] locale: Preferred locales: en-US, en
+[app/main] locale: Locale Override: [1mnull[22m
+[app/main] locale: Matched locale: en
+[setupI18nMain] intl.onWarn [@formatjs/intl] "defaultRichTextElements" was specified but "message" was not pre-compiled. 
+Please consider using "@formatjs/cli" to pre-compile your messages for performance.
+For more details see https://formatjs.github.io/docs/getting-started/message-distribution
+[app/main] locale: Text info direction for en: ltr
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+[app/main] signal is already registered as the default app for the sgnl url scheme.
+(electron) 'safeStorage.isEncryptionAvailable' is deprecated and will be removed. Please use 'safeStorage.isAsyncEncryptionAvailable' instead.
+[app/main] getSQLKey: using legacy key
+[SystemTraySettingCache] getSystemTraySetting got value MinimizeToSystemTray
+[SystemTraySettingCache] getSystemTraySetting returning MinimizeToSystemTray
+[app/main] app ready
+[app/main] starting version 8.37.0-alpha.1
+[app/main] media access status [90mundefined[39m [90mundefined[39m [90mundefined[39m
+[app/main] got fast theme-setting value system
+[app/main] MainSQL: sqlite(SQLITE_NOTICE_RECOVER_WAL): recovered 6 frames from WAL file /home/user/.config/Signal-development/sql/db.sqlite-wal
+[app/main] MainSQL: updateSchema:
+  Current user_version: 1870;
+  Most recent db schema: 1870;
+  SQLite version: 3.53.4;
+  SQLCipher version: 4.18.0 community;
+  (deprecated) schema_version: 626;
+
+[app/main] got fast spellcheck setting [33mtrue[39m
+[app/main] got fast theme-setting value system
+[app/main] got fast spellcheck setting [33mtrue[39m
+[app/main] visibleOnAnyScreen(window): x=960, y=30, width=960, height=1050
+[app/main] visibleOnAnyScreen(display #33): x=0, y=0, width=1920, height=1080
+[app/main] Initializing BrowserWindow config: {
+  show: [33mfalse[39m,
+  width: [33m960[39m,
+  height: [33m1050[39m,
+  minWidth: [33m300[39m,
+  minHeight: [33m200[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  titleBarStyle: [32m'default'[39m,
+  backgroundColor: [32m'#191919'[39m,
+  webPreferences: {
+    devTools: [33mtrue[39m,
+    spellcheck: [33mtrue[39m,
+    nodeIntegration: [33mfalse[39m,
+    nodeIntegrationInWorker: [33mfalse[39m,
+    sandbox: [33mfalse[39m,
+    contextIsolation: [33mtrue[39m,
+    preload: [32m'/home/user/src/Signal-Desktop/bundles/preload/wrapper.js'[39m
+  },
+  icon: [32m'/home/user/src/Signal-Desktop/images/signal-logo-desktop-linux.png'[39m,
+  x: [33m960[39m,
+  y: [33m30[39m
+}
+[spell_check] spellcheck: user locales: [ [32m'en-US'[39m, [32m'en'[39m ]
+[spell_check] spellcheck: available spellchecker languages: [
+  [32m'af'[39m,    [32m'bg'[39m,             [32m'ca'[39m,
+  [32m'cs'[39m,    [32m'cy'[39m,             [32m'da'[39m,
+  [32m'de'[39m,    [32m'de-DE'[39m,          [32m'el'[39m,
+  [32m'en'[39m,    [32m'en-AU'[39m,          [32m'en-CA'[39m,
+  [32m'en-GB'[39m, [32m'en-GB-oxendict'[39m, [32m'en-US'[39m,
+  [32m'es'[39m,    [32m'es-419'[39m,         [32m'es-AR'[39m,
+  [32m'es-ES'[39m, [32m'es-MX'[39m,          [32m'es-US'[39m,
+  [32m'et'[39m,    [32m'fa'[39m,             [32m'fo'[39m,
+  [32m'fr'[39m,    [32m'fr-FR'[39m,          [32m'gl'[39m,
+  [32m'he'[39m,    [32m'hi'[39m,             [32m'hr'[39m,
+  [32m'hu'[39m,    [32m'hy'[39m,             [32m'id'[39m,
+  [32m'it'[39m,    [32m'it-IT'[39m,          [32m'ko'[39m,
+  [32m'lt'[39m,    [32m'lv'[39m,             [32m'nb'[39m,
+  [32m'nl'[39m,    [32m'pl'[39m,             [32m'pt'[39m,
+  [32m'pt-BR'[39m, [32m'pt-PT'[39m,          [32m'ro'[39m,
+  [32m'ru'[39m,    [32m'sh'[39m,             [32m'sk'[39m,
+  [32m'sl'[39m,    [32m'sq'[39m,             [32m'sr'[39m,
+  [32m'sv'[39m,    [32m'ta'[39m,             [32m'tg'[39m,
+  [32m'tr'[39m,    [32m'uk'[39m,             [32m'vi'[39m
+]
+[spell_check] spellcheck: setting languages to: [ [32m'en-US'[39m, [32m'en'[39m ]
+[app/main] Updating BrowserWindow config: {
+  maximized: [33mfalse[39m,
+  autoHideMenuBar: [33mfalse[39m,
+  fullscreen: [33mfalse[39m,
+  width: [33m960[39m,
+  height: [33m1050[39m,
+  x: [33m960[39m,
+  y: [33m30[39m
+}
+[base_config] config/set: Saving ephemeral config to disk
+[base_config] config/set: Saved ephemeral config to disk
+[app/main] got fast theme-setting value system
+[310979:1114/135249.763830:ERROR:base/nix/mime_util_xdg.cc:139] Invalid mime.cache file does not contain null prior to ALIAS_LIST_OFFSET=44
+[SystemTrayService] System tray service: created
+[SystemTrayService] System tray service: updating main window. Previously, there was not a window, and now there is
+[SystemTrayService] System tray service: rendering no tray
+[SystemTrayService] System tray service: enabling
+[SystemTrayService] System tray service: rendering the tray
+[SystemTrayService] System tray service: creating the tray
+[app/main] Begin ensuring permissions
+[app/main] Ensuring file permissions for 4 files
+[app/main] Finish ensuring permissions in 19ms
+[OptionalResourceService] loaded emoji-index-en.json from disk
+[app/main] main window is ready-to-show
+[app/main] showing main window
+[SystemTrayService] System tray service: rendering the tray
+[311130:1114/135250.884854:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 1 times!
+[app/main] [updater] updater/start: Updates disabled - not starting new version checks
+[PreventDisplaySleepService] Prevent display sleep service: allowing display sleep
+[app/main] crashReports: 6 pending dumps found
+[311130:1114/135255.774821:ERROR:ui/gl/gl_surface_presentation_helper.cc:260] GetVSyncParametersIfAvailable() failed for 2 times!

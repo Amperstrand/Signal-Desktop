@@ -1,0 +1,52 @@
+{
+  "label": "opt2-guarded-reporter-r2",
+  "ready_after_s": 3.6,
+  "saw_stdout_output": true,
+  "alive_after_settle": true,
+  "alive_at_end": true,
+  "exited_seconds_after_trigger": null,
+  "trigger_fired": false,
+  "event_counts": {
+    "instr-ready": 1,
+    "handleError": 2,
+    "dialog": 2,
+    "exit": 1
+  },
+  "env_probe": [
+    {
+      "pid": "192435",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "192504",
+      "cmd": "/usr/lib/chatgpt/ChatGPT --type=renderer --crashpad-handler-pid=3541841 --enable",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "958991",
+      "cmd": "foot --app-id=org.omarchy.agent -e copilot --allow-all --interactive A process c",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "959048",
+      "cmd": "/home/user/.local/share/mise/installs/copilot/latest/copilot --allow-all --inter",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "959880",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": []
+    },
+    {
+      "pid": "960098",
+      "cmd": "/home/user/src/Signal-Desktop/node_modules/.pnpm/electron@45.2.1/node_modules/el",
+      "signal_eio_vars": [
+        "SIGNAL_EIO_TRIGGER=/tmp/opencode/signal-eio/runs/opt2-guarded-reporter-r2-1794433592/trigger",
+        "SIGNAL_EIO_INSTR=1",
+        "SIGNAL_EIO_EVENTS=/tmp/opencode/signal-eio/runs/opt2-guarded-reporter-r2-1794433592/events.jsonl"
+      ]
+    }
+  ],
+  "run_dir": "opt2-guarded-reporter-r2-1794433592"
+}
